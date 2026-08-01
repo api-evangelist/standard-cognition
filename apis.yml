@@ -1,8 +1,24 @@
 aid: standard-cognition
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/standard-cognition.png
 name: Standard Cognition
-description: 'Standard Cognition is a company surfaced as a portfolio company of initialized-capital and
-  added to the API Evangelist network as a stub for enrichment. Sector: enterprise-saas. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Standard Cognition (now Standard AI) is a San Francisco company that builds AI-powered
+  autonomous checkout and computer-vision technology for physical retail, letting shoppers pick up
+  items and walk out without scanning or waiting in line. Founded in 2017 and backed by Initialized
+  Capital, it pairs ceiling-mounted cameras with real-time deep-learning models to power cashierless
+  stores and, more recently, retail inventory and shopper-behavior analytics. The company runs an
+  open-source GitHub organization for its infrastructure tooling but publishes no public developer
+  API, SDK, or OpenAPI surface.'
 url: https://raw.githubusercontent.com/api-evangelist/standard-cognition/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Enterprise Saas
+- Computer Vision
+- Artificial Intelligence
+- Retail Technology
+- Autonomous Checkout
+- Retail Analytics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/standard-cognition-domain-security.yml
 - type: Website
   url: https://standard.ai/
+- type: GitHubOrganization
+  url: https://github.com/standard-ai
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

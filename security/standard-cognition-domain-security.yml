@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: standard.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 19 23:36:30 2026 GMT
+  hsts: false
+domains:
+- domain: standard.ai
+  dnssec: false
+  caa:
+  - 0 issue "pki.goog"
+  - 0 issue "letsencrypt.org"
+  spf: true
+  dmarc: true
+  dmarc_policy: none
